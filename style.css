@@ -1,0 +1,141 @@
+html {
+  font-size: 62.5%;
+}
+
+/* The body of the document set to Font-size = 16px(default) */
+#main {
+  background-color: rgb(0, 16, 19);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the title "Sadio Mane" with a default font of sans-serif for screens with the least size of 400px*/
+#title {
+  margin: 0px;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(28, 10, 75);
+  font-family: "Fira Sans", sans-serif;
+  background-color: red;
+}
+
+#container {
+  background-color: darkgrey;
+  max-width: 796px;
+  margin: 50px auto;
+  padding-bottom: 70px;
+  width: 900%;
+}
+
+#img-div {
+  width: 90%;
+  margin: 20px auto;
+}
+/* Setting the max-width of image to 95% allows for the image to look centered equally on both sides..
+The width isn't set to 100% because of the added space that the black border takes */
+#image {
+  width: 100%;
+  max-width: 95%;
+  display: block;
+  margin: 5px auto;
+  border: 5px solid black;
+  border-radius: 8px;
+  box-shadow: 4px 4px 7px black;
+}
+
+#img-caption {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.flex-container {
+  background-color: #6a6a6a;
+  padding-top: 2%;
+  /* max-height: 200vh; */
+}
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
+#tribute-info {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  color: rgb(28, 10, 75);
+  font-family: "Lato";
+}
+.quotes {
+  opacity: 0.8;
+  color: white;
+  border-left: 10px solid red;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: justify;
+  text-align: center;
+  font-style: italic;
+  background-color: black;
+  padding: 1%;
+  margin-left: 8%;
+  margin-bottom: 2%;
+  width: 80%;
+}
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
+p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin: 1%;
+}
+li {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+footer {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2rem;
+  /* background-color: red; */
+}
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 900;
+}
+@media screen and (max-width: 796px) {
+  #container {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .quotes {
+    font-size: 1rem;
+    margin: 0;
+    width: 98%;
+    border-left: 0px solid red;
+  }
+}
+/* Reducing the font-size to 4rem when the screen size is less than 400px */
+@media screen and (max-width: 400px) {
+  #title {
+    font-size: 4rem;
+  }
+  #img-caption {
+    font-size: 1rem;
+  }
+  .timeline {
+    font-size: 2rem;
+  }
+  footer {
+    font-size: 1.3rem;
+  }
+  p{
+    margin: 0.5%;
+  }
+}
